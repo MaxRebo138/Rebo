@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICP General Trivia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+	<div class="home-box custom-box">
+		<center>
+	
+		<p>Total number of Questions: <span class ="total-question">5</span></p>
+		<button type="button" class="btn" onClick="startQuiz()">Start Quiz</button>
+	</center>
+	</div>
+
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+		
+		</div>
+		<div class="question-text">
+		
+		</div>
+		<div class="option-container">
+
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onClick="next()">Next</button>
+		</div>
+		<div class="answers-indicator">
+
+		</div>
+	</div>
+
+<div class="result-box custom-box hide">
+	<h1>Quiz Result</h1>
+<table>
+	<tr>
+		<td>Total Questions</td>
+		<td><span class="total-question"></span></td>
+	</tr>
+	<tr>
+		<td>Attempt</td>
+		<td><span class="total-attempt"></span></td>
+	</tr>
+		<tr>
+		<td>Correct</td>
+		<td><span class="total-correct"></span></td>
+	</tr>
+		<tr>
+		<td>Wrong</td>
+		<td><span class="total-wrong"></span></td>
+	</tr>
+		<tr>
+		<td>Percentage</td>
+		<td><span class="percentage"></span></td>
+	</tr>
+		<tr>
+		<td>Your Total Score</td>
+		<td><span class="total-score"></span></td>
+	</tr>
+</table>
+<button type="button" class="btn" onClick="tryAgainQuiz()">Try Again</button>
+<button type="button" class="btn" onClick="window.location.href='../quizHome.html';">Go To Home</button>
+</div>
+
+<script src="generalQuestion.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
